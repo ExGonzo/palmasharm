@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Palma Sharm — Reservation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <!-- Leaflet for map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-o9N1j7kG2G8zG7iS1xP50bY4SyC2nlFZzZlKRBK4F9A=" crossorigin=""/>
+</head>
+<body data-page="reservation">
+  <header class="site-header">
+    <div class="brand">
+      <a href="index.html" class="logo" aria-label="Palma Sharm Home">
+        <span class="logo-mark">PS</span>
+        <span class="logo-text" data-i18n="brand.name">Palma Sharm</span>
+      </a>
+    </div>
+    <nav class="site-nav">
+      <a href="apartments.html" data-i18n="nav.apartments">Apartments</a>
+      <a href="transfers.html" data-i18n="nav.transfers">Transfers</a>
+      <a href="excursions.html" data-i18n="nav.excursions">Excursions</a>
+      <a href="food.html" data-i18n="nav.places">Food & Places</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="contact.html" class="btn small" data-i18n="nav.contact">Contact</a>
+      <div class="lang-switch" aria-label="Language switcher">
+        <button class="lang" data-lang="en" aria-label="English">EN</button>
+        <button class="lang" data-lang="it" aria-label="Italian">IT</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Centered reservation modal overlay -->
+  <div class="modal-overlay" id="resvOverlay">
+    <div class="modal" id="resvModal" role="dialog" aria-modal="true" aria-label="Reservation form">
+      <header>
+        <h3 id="aptName">Reservation</h3>
+        <button class="close" id="closeModal" aria-label="Close">✕</button>
+      </header>
+      <div class="content">
+        <div class="pane">
+          <div id="map" class="map" aria-label="Apartment location map"></div>
+          <div class="calendar" id="calendar">
+            <header>
+              <div id="monthLabel">Month</div>
+              <div class="nav">
+                <button id="prevMonth" aria-label="Previous month">◀</button>
+                <button id="nextMonth" aria-label="Next month">▶</button>
+              </div>
+            </header>
+            <div class="grid" id="calGrid"></div>
+            <div class="legend">
+              <span><i class="badge avail"></i> <span data-i18n="calendar.available">Available</span></span>
+              <span><i class="badge booked"></i> <span data-i18n="calendar.booked">Booked</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="pane">
+          <form id="resvForm">
+            <div class="form-row">
+              <label for="checkin" data-i18n="reservation.checkin">Check‑in</label>
+              <input type="date" id="checkin" name="checkin" required />
+            </div>
+            <div class="form-row">
+              <label for="checkout" data-i18n="reservation.checkout">Check‑out</label>
+              <input type="date" id="checkout" name="checkout" required />
+            </div>
+            <div class="form-row">
+              <label for="guests" data-i18n="reservation.guests">Guests</label>
+              <input type="number" id="guests" name="guests" min="1" max="6" value="2" required />
+            </div>
+            <div class="form-row">
+              <label for="notes" data-i18n="reservation.notes">Notes</label>
+              <textarea id="notes" name="notes" rows="5" placeholder="Preferences, arrival time, etc."></textarea>
+            </div>
+            <div class="form-actions">
+              <button class="btn primary" type="submit" data-i18n="reservation.request">Request reservation</button>
+              <a class="btn ghost" id="waLink" href="#" target="_blank" rel="noopener" data-i18n="reservation.whatsapp">WhatsApp</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><span class="logo-mark">PS</span> Palma Sharm</p>
+      <p data-i18n="footer.tag">Comfortable stays and friendly help in Sharm El Sheikh.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-VQbVqfTdM2QnBzjvC90K96p6sCfeRyyvWQmQVy8p1nw=" crossorigin=""></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

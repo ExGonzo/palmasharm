@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Palma Sharm — Family-Friendly Stays & Experiences</title>
+  <meta name="description" content="Palma Sharm offers comfortable apartments, airport transfers, curated excursions, and local recommendations in Sharm El Sheikh." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-page="home">
+  <header class="site-header reveal">
+    <div class="brand">
+      <a href="index.html" class="logo" aria-label="Palma Sharm Home">
+        <span class="logo-mark">PS</span>
+        <span class="logo-text" data-i18n="brand.name">Palma Sharm</span>
+      </a>
+    </div>
+    <nav class="site-nav">
+      <a href="apartments.html" data-i18n="nav.apartments">Apartments</a>
+      <a href="transfers.html" data-i18n="nav.transfers">Transfers</a>
+      <a href="excursions.html" data-i18n="nav.excursions">Excursions</a>
+      <a href="food.html" data-i18n="nav.places">Food & Places</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="contact.html" class="btn small" data-i18n="nav.contact">Contact</a>
+      <div class="lang-switch" aria-label="Language switcher">
+        <button class="lang" data-lang="en" aria-label="English">EN</button>
+        <button class="lang" data-lang="it" aria-label="Italian">IT</button>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-content reveal">
+      <h1 data-i18n="hero.title">Family-friendly stays and local help in Sharm El Sheikh</h1>
+      <p class="lead" data-i18n="hero.subtitle">Comfortable apartments, airport pickups, and experiences made simple.</p>
+      <div class="hero-ctas">
+        <a class="btn primary" href="apartments.html" data-i18n="cta.viewApartments">See Apartments</a>
+        <a class="btn ghost" href="excursions.html" data-i18n="cta.exploreExcursions">Explore Excursions</a>
+      </div>
+    </div>
+    <div class="floating-shapes" aria-hidden="true">
+      <span class="bubble b1"></span>
+      <span class="bubble b2"></span>
+      <span class="bubble b3"></span>
+      <span class="bubble b4"></span>
+    </div>
+  </section>
+
+  <section class="features reveal">
+    <div class="container grid-3">
+      <div class="card">
+        <div class="icon">🏠</div>
+        <h3 data-i18n="features.apartments.title">Comfortable Apartments</h3>
+        <p data-i18n="features.apartments.desc">Bright, well-equipped stays ideal for couples, families, and small groups.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🚐</div>
+        <h3 data-i18n="features.transfers.title">Airport Transfers</h3>
+        <p data-i18n="features.transfers.desc">Private cars and vans with friendly drivers who know the city.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🌊</div>
+        <h3 data-i18n="features.experiences.title">Experiences</h3>
+        <p data-i18n="features.experiences.desc">Snorkeling, desert safaris, day trips, and local recommendations.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="intro reveal">
+    <div class="container">
+      <h2 data-i18n="intro.title">Welcome to Palma Sharm</h2>
+      <p data-i18n="intro.body">We help you feel at home in Sharm El Sheikh. Choose a comfortable apartment, arrange a smooth ride from the airport, and pick from hand-curated activities and places to eat. Our friendly approach keeps planning easy, so you can focus on enjoying time together.</p>
+    </div>
+  </section>
+
+  <section class="quick-links reveal">
+    <div class="container grid-4">
+      <a class="quick card link-hover" href="apartments.html">
+        <img src="https://picsum.photos/seed/apartments-card/1200/800" alt="Apartment interior" />
+        <div class="meta">
+          <h3 data-i18n="quick.apartments">Apartments</h3>
+        </div>
+      </a>
+      <a class="quick card link-hover" href="transfers.html">
+        <img src="https://picsum.photos/seed/transfers-card/1200/800" alt="Airport transfer" />
+        <div class="meta">
+          <h3 data-i18n="quick.transfers">Transfers</h3>
+        </div>
+      </a>
+      <a class="quick card link-hover" href="excursions.html">
+        <img src="https://picsum.photos/seed/excursions-card/1200/800" alt="Boat excursion" />
+        <div class="meta">
+          <h3 data-i18n="quick.excursions">Excursions</h3>
+        </div>
+      </a>
+      <a class="quick card link-hover" href="food.html">
+        <img src="https://picsum.photos/seed/food-card/1200/800" alt="Local food" />
+        <div class="meta">
+          <h3 data-i18n="quick.places">Food & Places</h3>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <footer class="site-footer reveal">
+    <div class="container">
+      <p>
+        <span class="logo-mark">PS</span>
+        <span>&nbsp;Palma Sharm</span>
+      </p>
+      <p data-i18n="footer.tag">Comfortable stays and friendly help in Sharm El Sheikh.</p>
+      <p>
+        <a href="mailto:info@palmasharm.com" class="link" data-i18n="footer.email">info@palmasharm.com</a>
+        ·
+        <a href="https://wa.me/201000000000" class="link" target="_blank" rel="noopener" data-i18n="footer.whatsapp">WhatsApp us</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

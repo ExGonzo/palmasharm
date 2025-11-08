@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Palma Sharm — Apartments</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-page="apartments">
+  <header class="site-header">
+    <div class="brand">
+      <a href="index.html" class="logo" aria-label="Palma Sharm Home">
+        <span class="logo-mark">PS</span>
+        <span class="logo-text" data-i18n="brand.name">Palma Sharm</span>
+      </a>
+    </div>
+    <nav class="site-nav">
+      <a href="apartments.html" class="active" data-i18n="nav.apartments">Apartments</a>
+      <a href="transfers.html" data-i18n="nav.transfers">Transfers</a>
+      <a href="excursions.html" data-i18n="nav.excursions">Excursions</a>
+      <a href="food.html" data-i18n="nav.places">Food & Places</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="contact.html" class="btn small" data-i18n="nav.contact">Contact</a>
+      <div class="lang-switch" aria-label="Language switcher">
+        <button class="lang" data-lang="en" aria-label="English">EN</button>
+        <button class="lang" data-lang="it" aria-label="Italian">IT</button>
+      </div>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1 data-i18n="apts.title">Apartments for a comfortable stay</h1>
+      <p class="lead" data-i18n="apts.lead">Bright spaces with practical amenities, close to beaches and city life.</p>
+    </div>
+  </section>
+
+  <section class="apartment-list container">
+    <div class="grid-3">
+      <article class="card apartment">
+        <img src="https://picsum.photos/seed/sea-breeze/1200/800" alt="Sea Breeze Apartment" />
+        <div class="card-body">
+          <h3 data-i18n="apts.sea.name">Sea Breeze Apartment</h3>
+          <p data-i18n="apts.sea.summary">1 bedroom · Sleeps 3 · Balcony · Kitchenette</p>
+          <div class="tags"><span>Wi‑Fi</span><span>A/C</span><span>Near beach</span><span>Smart TV</span><span>Washer</span></div>
+          <button class="btn secondary toggle" data-target="#apt1" data-i18n="apts.view">View details</button>
+          <div class="details" id="apt1" hidden>
+            <p data-i18n="apts.sea.desc">Cozy apartment with a breezy feel, ideal for couples or small families. Located in Hadaba—short ride to Naama Bay and Old Market.</p>
+            <ul class="checklist">
+              <li data-i18n="apts.sea.check1">Queen bed + sofa bed</li>
+              <li data-i18n="apts.sea.check2">Balcony with morning sun</li>
+              <li data-i18n="apts.sea.check3">Kitchenette with kettle and fridge</li>
+              <li data-i18n="apts.sea.check4">Supermarket 3 min walk</li>
+            </ul>
+            <p class="note" data-i18n="apts.sea.note">From $45/night · Weekly discounts available</p>
+            <div class="actions">
+              <a class="btn primary" href="reservation.html?apt=sea-breeze" data-i18n="apts.book">Request booking</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card apartment">
+        <img src="https://picsum.photos/seed/garden-view/1200/800" alt="Garden View Apartment" />
+        <div class="card-body">
+          <h3 data-i18n="apts.garden.name">Garden View Apartment</h3>
+          <p data-i18n="apts.garden.summary">2 bedrooms · Sleeps 5 · Patio · Full kitchen</p>
+          <div class="tags"><span>Wi‑Fi</span><span>A/C</span><span>Family-friendly</span><span>Crib on request</span><span>Parking</span></div>
+          <button class="btn secondary toggle" data-target="#apt2" data-i18n="apts.view">View details</button>
+          <div class="details" id="apt2" hidden>
+            <p data-i18n="apts.garden.desc">Spacious layout with a peaceful patio. In Nabq Bay—easy access to markets and seaside promenades; great for family time.</p>
+            <ul class="checklist">
+              <li data-i18n="apts.garden.check1">Two queen beds + single</li>
+              <li data-i18n="apts.garden.check2">Full kitchen and dining table</li>
+              <li data-i18n="apts.garden.check3">Ground-floor with patio</li>
+              <li data-i18n="apts.garden.check4">Playground 5 min walk</li>
+            </ul>
+            <p class="note" data-i18n="apts.garden.note">From $60/night · Longer-stay rates on request</p>
+            <div class="actions">
+              <a class="btn primary" href="reservation.html?apt=garden-view" data-i18n="apts.book">Request booking</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card apartment">
+        <img src="https://picsum.photos/seed/city-comfort/1200/800" alt="City Comfort Studio" />
+        <div class="card-body">
+          <h3 data-i18n="apts.city.name">City Comfort Studio</h3>
+          <p data-i18n="apts.city.summary">Studio · Sleeps 2 · Central · Kitchenette</p>
+          <div class="tags"><span>Wi‑Fi</span><span>A/C</span><span>Walkable</span><span>Lift access</span><span>24h security</span></div>
+          <button class="btn secondary toggle" data-target="#apt3" data-i18n="apts.view">View details</button>
+          <div class="details" id="apt3" hidden>
+            <p data-i18n="apts.city.desc">Practical studio near cafés and public beaches. In Naama Bay—smart option for short stays with easy transport.</p>
+            <ul class="checklist">
+              <li data-i18n="apts.city.check1">Double bed</li>
+              <li data-i18n="apts.city.check2">Kitchenette with microwave</li>
+              <li data-i18n="apts.city.check3">Walk to promenade</li>
+              <li data-i18n="apts.city.check4">Public beach nearby</li>
+            </ul>
+            <p class="note" data-i18n="apts.city.note">From $35/night · Great for weekend trips</p>
+            <div class="actions">
+              <a class="btn primary" href="reservation.html?apt=city-comfort" data-i18n="apts.book">Request booking</a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><span class="logo-mark">PS</span> Palma Sharm</p>
+      <p data-i18n="footer.tag">Comfortable stays and friendly help in Sharm El Sheikh.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

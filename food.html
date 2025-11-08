@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Palma Sharm — Food & Places</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-page="places">
+  <header class="site-header">
+    <div class="brand">
+      <a href="index.html" class="logo" aria-label="Palma Sharm Home">
+        <span class="logo-mark">PS</span>
+        <span class="logo-text" data-i18n="brand.name">Palma Sharm</span>
+      </a>
+    </div>
+    <nav class="site-nav">
+      <a href="apartments.html" data-i18n="nav.apartments">Apartments</a>
+      <a href="transfers.html" data-i18n="nav.transfers">Transfers</a>
+      <a href="excursions.html" data-i18n="nav.excursions">Excursions</a>
+      <a href="food.html" class="active" data-i18n="nav.places">Food & Places</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="contact.html" class="btn small" data-i18n="nav.contact">Contact</a>
+      <div class="lang-switch" aria-label="Language switcher">
+        <button class="lang" data-lang="en" aria-label="English">EN</button>
+        <button class="lang" data-lang="it" aria-label="Italian">IT</button>
+      </div>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1 data-i18n="places.title">Food & places to visit</h1>
+      <p class="lead" data-i18n="places.lead">Simple favorites and scenic spots around Sharm El Sheikh.</p>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 data-i18n="places.restaurants">Restaurants</h2>
+    <div class="grid-3">
+      <article class="card">
+        <img src="https://picsum.photos/seed/seafood-oldmarket/1200/800" alt="Seafood restaurant in Old Market" />
+        <div class="card-body">
+          <h3 data-i18n="places.fares.title">Fares Seafood (Old Market)</h3>
+          <p data-i18n="places.fares.desc">Fresh local fish, grilled and fried—popular with visitors and residents.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://picsum.photos/seed/egyptian-cuisine/1200/800" alt="Egyptian cuisine at Old Market" />
+        <div class="card-body">
+          <h3 data-i18n="places.masrien.title">El Masrien (Old Market)</h3>
+          <p data-i18n="places.masrien.desc">Egyptian dishes like kofta, grilled chicken, and tahini salads.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://picsum.photos/seed/soho-square-night/1200/800" alt="SOHO Square evening promenade" />
+        <div class="card-body">
+          <h3 data-i18n="places.soho.title">SOHO Square options</h3>
+          <p data-i18n="places.soho.desc">Lots of family-friendly places and an evening promenade with music.</p>
+        </div>
+      </article>
+    </div>
+
+    <h2 data-i18n="places.placesToSee">Places to see</h2>
+    <div class="grid-3">
+      <article class="card">
+        <img src="https://picsum.photos/seed/naama-bay-sunset/1200/800" alt="Naama Bay at sunset" />
+        <div class="card-body">
+          <h3 data-i18n="places.naama.title">Naama Bay</h3>
+          <p data-i18n="places.naama.desc">Beachfront walkway, cafés, and relaxed atmosphere—nice at sunset.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://picsum.photos/seed/old-market-mosque/1200/800" alt="Al Sahaba Mosque near Old Market" />
+        <div class="card-body">
+          <h3 data-i18n="places.oldmarket.title">Old Market & Al Sahaba Mosque</h3>
+          <p data-i18n="places.oldmarket.desc">Colorful market area and a striking mosque near the square.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://picsum.photos/seed/el-fanar-lighthouse/1200/800" alt="El Fanar Lighthouse coastal view" />
+        <div class="card-body">
+          <h3 data-i18n="places.elfanar.title">El Fanar Lighthouse</h3>
+          <p data-i18n="places.elfanar.desc">Coastal views and easy access to snorkeling-friendly beaches nearby.</p>
+        </div>
+      </article>
+    </div>
+
+    <h2 data-i18n="places.tips">Simple tips</h2>
+    <ul class="checklist">
+      <li data-i18n="tips.cash">Carry small cash for taxis and markets.</li>
+      <li data-i18n="tips.hydrate">Hydrate well; the sun is strong even in cooler months.</li>
+      <li data-i18n="tips.sunscreen">For snorkeling, consider reef-friendly sunscreen.</li>
+    </ul>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><span class="logo-mark">PS</span> Palma Sharm</p>
+      <p data-i18n="footer.tag">Comfortable stays and friendly help in Sharm El Sheikh.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

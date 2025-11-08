@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Palma Sharm — Airport Transfers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-page="transfers">
+  <header class="site-header">
+    <div class="brand">
+      <a href="index.html" class="logo" aria-label="Palma Sharm Home">
+        <span class="logo-mark">PS</span>
+        <span class="logo-text" data-i18n="brand.name">Palma Sharm</span>
+      </a>
+    </div>
+    <nav class="site-nav">
+      <a href="apartments.html" data-i18n="nav.apartments">Apartments</a>
+      <a href="transfers.html" class="active" data-i18n="nav.transfers">Transfers</a>
+      <a href="excursions.html" data-i18n="nav.excursions">Excursions</a>
+      <a href="food.html" data-i18n="nav.places">Food & Places</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="contact.html" class="btn small" data-i18n="nav.contact">Contact</a>
+      <div class="lang-switch" aria-label="Language switcher">
+        <button class="lang" data-lang="en" aria-label="English">EN</button>
+        <button class="lang" data-lang="it" aria-label="Italian">IT</button>
+      </div>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1 data-i18n="trans.title">Airport Transfers</h1>
+      <p class="lead" data-i18n="trans.lead">Friendly drivers and clean vehicles for a smooth start to your trip.</p>
+    </div>
+  </section>
+
+  <section class="container grid-3">
+    <article class="card">
+      <img src="https://picsum.photos/seed/private-car/1200/800" alt="Private car transfer" />
+      <div class="card-body">
+        <div class="icon">🚗</div>
+        <h3 data-i18n="trans.private">Private Car (1–3 people)</h3>
+        <p data-i18n="trans.privateDesc">Door-to-door from airport to your apartment/hotel, quick and convenient.</p>
+        <a class="btn primary" href="https://wa.me/201000000000" target="_blank" rel="noopener" data-i18n="cta.reserve">Reserve</a>
+      </div>
+    </article>
+    <article class="card">
+      <img src="https://picsum.photos/seed/comfort-van/1200/800" alt="Comfort van transfer" />
+      <div class="card-body">
+        <div class="icon">🚐</div>
+        <h3 data-i18n="trans.van">Comfort Van (4–8 people)</h3>
+        <p data-i18n="trans.vanDesc">Space for family and bags, child seats on request.</p>
+        <a class="btn primary" href="https://wa.me/201000000000" target="_blank" rel="noopener" data-i18n="cta.reserve">Reserve</a>
+      </div>
+    </article>
+    <article class="card">
+      <img src="https://picsum.photos/seed/group-shuttle/1200/800" alt="Group shuttle" />
+      <div class="card-body">
+        <div class="icon">🚌</div>
+        <h3 data-i18n="trans.group">Group Shuttle</h3>
+        <p data-i18n="trans.groupDesc">Affordable option for bigger groups and coordinated arrivals.</p>
+        <a class="btn primary" href="https://wa.me/201000000000" target="_blank" rel="noopener" data-i18n="cta.reserve">Reserve</a>
+      </div>
+    </article>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><span class="logo-mark">PS</span> Palma Sharm</p>
+      <p data-i18n="footer.tag">Comfortable stays and friendly help in Sharm El Sheikh.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
