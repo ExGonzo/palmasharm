@@ -2,6 +2,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   // Create a floating language toggle for mobile visibility
   createLangFab();
+  // Create mobile hamburger menu and drawer for smartphones
+  createMobileMenu();
 
   // Apply translations at startup
   applyTranslations();
@@ -73,6 +75,69 @@ function createLangFab() {
   fab.appendChild(en);
   fab.appendChild(it);
   document.body.appendChild(fab);
+}
+
+function createMobileMenu() {
+  const header = document.querySelector('.site-header');
+  const siteNav = document.querySelector('.site-nav');
+  if (!header || !siteNav) return;
+
+  // Hamburger button
+  const toggle = document.createElement('button');
+  toggle.className = 'menu-toggle';
+  toggle.setAttribute('aria-label', 'Open menu');
+  toggle.innerHTML = '<span></span><span></span><span></span>';
+  header.insertBefore(toggle, siteNav);
+
+  // Overlay and drawer
+  const overlay = document.createElement('div');
+  overlay.className = 'nav-overlay';
+  const drawer = document.createElement('nav');
+  drawer.className = 'mobile-nav';
+
+  // Build list of links from existing nav
+  const list = document.createElement('ul');
+  list.className = 'mobile-nav-list';
+  siteNav.querySelectorAll('a').forEach(a => {
+    const li = document.createElement('li');
+    const link = document.createElement('a');
+    link.href = a.getAttribute('href');
+    const key = a.getAttribute('data-i18n');
+    if (key) link.setAttribute('data-i18n', key);
+    link.className = a.classList.contains('btn') ? 'btn small' : '';
+    link.textContent = a.textContent;
+    li.appendChild(link);
+    list.appendChild(li);
+  });
+
+  // Language buttons prominently at top of drawer
+  const langBar = document.createElement('div');
+  langBar.className = 'mobile-lang';
+  const en = document.createElement('button');
+  en.className = 'lang'; en.dataset.lang = 'en'; en.textContent = 'EN';
+  const it = document.createElement('button');
+  it.className = 'lang'; it.dataset.lang = 'it'; it.textContent = 'IT';
+  langBar.appendChild(en); langBar.appendChild(it);
+
+  drawer.appendChild(langBar);
+  drawer.appendChild(list);
+  document.body.appendChild(overlay);
+  document.body.appendChild(drawer);
+
+  // Toggle behavior
+  const open = () => {
+    drawer.classList.add('open');
+    overlay.classList.add('show');
+    document.body.style.overflow = 'hidden';
+  };
+  const close = () => {
+    drawer.classList.remove('open');
+    overlay.classList.remove('show');
+    document.body.style.overflow = '';
+  };
+  toggle.addEventListener('click', open);
+  overlay.addEventListener('click', close);
+  window.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
 }
 
 function initReservation() {

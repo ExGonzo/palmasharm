@@ -169,3 +169,20 @@ p { margin: 6px 0 12px; }
   .lang-fab { display: flex; }
   .site-header .lang-switch { display: none; }
 }
+
+/* Mobile menu (hamburger & drawer) */
+.menu-toggle { display: none; border: none; background: transparent; cursor: pointer; padding: 8px; border-radius: 8px; }
+.menu-toggle span { display: block; width: 26px; height: 3px; background: var(--text); margin: 5px 0; border-radius: 3px; }
+.nav-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.35); z-index: 1000; }
+.nav-overlay.show { display: block; }
+.mobile-nav { position: fixed; top: 0; right: -80%; width: 80%; height: 100%; background: #fff; box-shadow: -10px 0 30px var(--shadow); z-index: 1001; transition: right .25s ease; display: flex; flex-direction: column; padding: 16px; }
+.mobile-nav.open { right: 0; }
+.mobile-lang { display: flex; gap: 8px; margin-bottom: 12px; }
+.mobile-nav-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
+.mobile-nav-list a { padding: 10px 12px; border-radius: 10px; background: #f8fbff; }
+@media (max-width: 900px) {
+  .menu-toggle { display: inline-block; }
+}
+@media (max-width: 768px) {
+  .site-nav { display: none; }
+}
